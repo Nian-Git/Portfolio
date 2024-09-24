@@ -18,16 +18,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto" >
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link" href="#about">about</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">work</a>
+                    <a class="nav-link" href="#work">work</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link" href="#contact">contact</a>
                   </li>
                 </ul>
               </div>
@@ -36,21 +36,21 @@
     </header>
 
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-8">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Sufyan Fadhilah</h1>
                 <p>I am a Software Engineer based in Indonesia</p>
                 <a class="btn button" ref="bahan/profil.jpg" download="">Resume</a>
             </div>
-            <div class="porto col-4">
+            <div class="porto col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
                 <img src="bahan/profil.jpg" width="70%" alt="foto profilku">
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a class="text-decoration-none text-dark" href="#about">More info</a>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-decoration-none text-dark" >More info</div>
             <img id="arrow" class="mt-2" src="bahan/down-chevron.png" alt="arrow">
-        </div>
+        </a>
     </section>
 
     <section id="about" class="about container">
@@ -93,10 +93,10 @@
 
     <section id="work" class="work container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus at molestias facere ipsa! Exercitationem et quis consequatur totam nemo alias, molestiae in nam nisi ratione incidunt magnam cumque eligendi, velit perferendis similique vitae laborum deleniti esse aliquid saepe? Quidem facilis numquam quod totam eum, esse omnis nostrum ut magnam animi.</p>
             </div>
-            <div class="col work-img">
+            <div class="col-12 col-6 work-img">
                 <div id="work-1" class="work-img-item">
                     <img src="bahan/work-1.png" alt="work-1" id="work 1">
                 </div>
@@ -112,25 +112,25 @@
 
     <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque deserunt tenetur animi eligendi dolorum vitae ex, provident veritatis accusantium minus et excepturi? Expedita nulla animi beatae quos dicta corporis consectetur, odio quas reiciendis placeat aliquid impedit tempora nam magnam labore quasi ut accusantium eius. Id, assumenda adipisci. Repellat, sed!</p>
                 <div class="row">
                     <div class="col d-flex align-items-center">
-                       <img src="bahan/Facebook.svg" alt="img facebook">
-                        <p>Sufyan Fadhilah</p>
+                       <img class="w-25" src="bahan/Facebook.svg" alt="img facebook">
+                        <p class="mb-0 ms-2">Sufyan Fadhilah</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="bahan/Instagram.svg" alt="img instagram">
-                         <p>n.niian</p>
+                        <img class="w-25" src="bahan/Instagram.svg" alt="img instagram">
+                         <p class="mb-0 ms-2">n.niian</p>
                      </div>
                      <div class="col d-flex align-items-center">
-                        <img src="bahan/Twitter.svg" alt="img twitter">
-                         <p>Sufyan Fadhilah</p>
+                        <img class="w-25" src="bahan/Twitter.svg" alt="img twitter">
+                         <p class="mb-0 ms-2">Sufyan Fadhilah</p>
                      </div>   
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-lg-5">
                 <form class="contact-form" onsubmit="onFromSubmit(event)">
                     <div class="mb-3">
                       <label for="inp_email" class="form-label">Email address</label>
