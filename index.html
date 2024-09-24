@@ -108,31 +108,49 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h1>Work Experience</h1>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div>
-            <img src="" alt="gambar kerja">
-        </div>
     </section>
 
-    <section id="contact">
-        <div>
-            <h1>Hubungi Saya</h1>
-        </div>
-        <div>
-            <div>
-                <img src="" alt="email">
-                <h2>sufyanfadhil2210@gmail.com</h2>
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque deserunt tenetur animi eligendi dolorum vitae ex, provident veritatis accusantium minus et excepturi? Expedita nulla animi beatae quos dicta corporis consectetur, odio quas reiciendis placeat aliquid impedit tempora nam magnam labore quasi ut accusantium eius. Id, assumenda adipisci. Repellat, sed!</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                       <img src="bahan/Facebook.svg" alt="img facebook">
+                        <p>Sufyan Fadhilah</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img src="bahan/Instagram.svg" alt="img instagram">
+                         <p>n.niian</p>
+                     </div>
+                     <div class="col d-flex align-items-center">
+                        <img src="bahan/Twitter.svg" alt="img twitter">
+                         <p>Sufyan Fadhilah</p>
+                     </div>   
+                </div>
             </div>
-            <div>
-                <img src="" alt="IG">
-                <h2>@sufyan_fadhil</h2>
+
+            <div class="col">
+                <form class="contact-form" onsubmit="onFromSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp_message" class="form-label">message</label>
+                        <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
+                      </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                  </form>
             </div>
         </div>
     </section>
-
 
 
 
